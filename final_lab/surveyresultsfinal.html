@@ -1,0 +1,109 @@
+<html>
+	<!-- Christopher J. Leipfert -->
+	<!-- Wednesday, December, 4 2013 -->
+
+<head>
+<link rel="stylesheet" type="text/css" href="surveyfinal.css">
+<title>Smythe University Survey Results</title>
+</head>
+
+
+<body id="theBody">
+<h1 id="h1">Smythe University</h1>
+<p class="heading">"Learning for a Lifetime of Success"</p>
+
+<hr width = "75%" />    <!-- we haven't introduced this tag yet, so ignore for now -->
+<p>  In the fall of 2011, our university conducted a survey to find out why students had
+come to this college.  After intensive efforts to collect data from students, data was then
+collated by Smythe University's Center for Research.  Researchers gave a presentation
+to the President of the College, the College Board and local news organizations to provide
+information about the results of the work. </p>
+
+One of the first questions concerned the manner in which the data was collected from students.
+Researchers summarized the data collection methods, highlighting the following: <br />
+
+<ul>
+<li>over 5,200 students were surveyed.</li>
+<li>surveys were distributed in all Freshman Seinar classes.</Li>
+<li>researchers also conducted one-on-one interviews with many students.</li>
+<li>no students refused to participate when asked for information.</li>
+<li>funding for the survey came from a federal grant for institutional research.</li>
+</ul>
+<br />
+
+One of the first pieces of information tabulated by S.U.'s Center for Research concerned
+the key reasons that students indicated that they had come to college.  Based on frequency
+of response, the following were the top five reasons students indicated they came to college
+at Smythe University:<br />
+<ol>
+<li>because the college had a good reputation.</li>
+<li>to experience student activities outside the classroom.</li>
+<li>to make money after graduating.</li>
+<li>to get a personally fulfilling job.</li>
+<li>to prepare for higher level degrees.</li>
+</ol>
+<br />
+Further information concerning the survey results can be obtained by contacting the Dean of
+Students at <b id="email">DeanStudents@SmytheUniversity.edu</b> or by calling 
+<b>1-888-555-5555</b> between the hours of
+8 a.m. and 4 p.m..  While particular student responses are confidential, information concerning
+questions asked, specifics of how data was collected, and graphical and numerical summaries of
+the data as compiled by the Center for Research are avaiable.
+
+<p class="bottom">Please come back and visit again!</p>
+</font>
+
+<form   method="post" action="#"  name="theForm"   id="theForm">
+		<label for="school"><b> Select your school: </b></label>
+		<select name="school" id="school">
+			<option value="Smythe"> Smythe University </option>
+			<option Value="ACC"> SUNY ACC </option>
+			<option Value="Platts"> SUNY Plattsburgh </option>
+			<option value="Albany"> University of Albany </option>	<br/>
+		</select>
+	<br/>
+		<button type="button" onClick="FunctionNameC1()">
+		Click Me!
+		</button>
+		</form>
+
+		<script>
+			function FunctionNameC1()
+			{
+				var formResults=document.getElementById("theForm");
+				var school=formResults.elements ["school"].value;
+				
+				if ( school=="Smythe" )
+				{
+					document.getElementById("theBody").style.color="orange";
+					document.getElementById("theBody").style.background="purple";
+				}
+				else if ( school=="ACC" )
+				{
+					document.getElementById("theBody").style.color="white";
+					document.getElementById("theBody").style.background="#003300";
+					document.getElementById("h1").innerHTML="SUNY ACC";
+					document.getElementById("email").innerHTML="DeanStudents@sunyacc.edu";
+				}
+				else if ( school=="Platts" )
+				{
+					document.getElementById("theBody").style.color="white";
+					document.getElementById("theBody").style.background="red";
+					document.getElementById("h1").innerHTML="SUNY Plattsburgh";
+					document.getElementById("email").innerHTML="DeanStudents@plattsburgh.edu";
+				}
+				else if ( school=="Albany" )
+				{
+					document.getElementById("theBody").style.color="purple";
+					document.getElementById("theBody").style.background="#ffd700";
+					document.getElementById("h1").innerHTML="University of Albany";
+					document.getElementById("email").innerHTML="DeanStudents@albany.edu";
+				}				
+			}    
+		</script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+	}
+p.heading{
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+b{
+ color: blue;
+ }
+ p.bottom{
+	text-align: center;
+	font-size-adjust: +1;
+	font-weight: bold;
+	color: black;
+}
